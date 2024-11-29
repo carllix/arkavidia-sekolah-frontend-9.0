@@ -129,18 +129,18 @@ export default function Home() {
       <div className="relative flex flex-col items-center lg:items-start gap-6 pb-20 w-full px-10 bg-white">
         <h1 className="mt-12 font-bold text-3xl text-center lg:text-start">Contact Person</h1>
         <div className="flex flex-col lg:flex-row gap-6">
-          <div className="bg-blue-900 text-white p-5 flex flex-col rounded-xl items-center justify-center size-56">
-            <FaWhatsapp size={70} />
+          <div className="bg-blue-900 text-white p-5 flex flex-col rounded-xl items-center justify-center size-44">
+            <FaWhatsapp size={50} />
             <h1 className="mt-4">081234567890</h1>
             <h1>(Lorem)</h1>
           </div>
-          <div className="bg-blue-900 text-white p-5 flex flex-col rounded-xl items-center justify-center size-56">
-            <FaLine size={70} />
+          <div className="bg-blue-900 text-white p-5 flex flex-col rounded-xl items-center justify-center size-44">
+            <FaLine size={50} />
             <h1 className="mt-4">loremidline</h1>
             <h1>(Lorem)</h1>
           </div>
-          <div className="bg-blue-900 text-white p-5 flex flex-col rounded-xl items-center justify-center size-56">
-            <FaInstagram size={70} />
+          <div className="bg-blue-900 text-white p-5 flex flex-col rounded-xl items-center justify-center size-44">
+            <FaInstagram size={50} />
             <h1 className="mt-4">@arkav</h1>
           </div>
         </div>
