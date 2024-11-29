@@ -45,6 +45,20 @@ const prizeData = [
 export default function Home() {
   return (
     <div className="flex flex-col items-center bg-yellow-500 min-h-screen">
+      <Image
+        src="/star.svg"
+        alt="Star"
+        width={150}
+        height={150}
+        className="absolute top-24 left-20 hidden lg:block"
+      />
+      <Image
+        src="/game.svg"
+        alt="game"
+        width={200}
+        height={200}
+        className="absolute top-52 right-0 hidden lg:block"
+      />
       {/* Description */}
       <div className="relative flex flex-col items-center mt-44 px-10">
         <Image
@@ -111,7 +125,14 @@ export default function Home() {
       </div>
 
       {/* Timeline */}
-      <div className="flex flex-col items-center gap-6 pb-8 w-full max-w-6xl px-10">
+      <div className="relative flex flex-col items-center gap-6 pb-8 w-full max-w-6xl px-10">
+        <Image
+          src="/star.svg"
+          alt="Star"
+          width={150}
+          height={150}
+          className="absolute top-10 left-10 hidden lg:block"
+        />
         <h1 className="mt-12 font-bold text-3xl">TIMELINE</h1>
         <Countdown targetDate={new Date("2025-01-31T07:00:00")} />
         <div className="w-full bg-gradient-to-b from-[rgba(217,217,217,0)] to-[#FF634B]">
@@ -127,7 +148,9 @@ export default function Home() {
 
       {/* Contact */}
       <div className="relative flex flex-col items-center lg:items-start gap-6 pb-20 w-full px-10 bg-white">
-        <h1 className="mt-12 font-bold text-3xl text-center lg:text-start">Contact Person</h1>
+        <h1 className="mt-12 font-bold text-3xl text-center lg:text-start">
+          Contact Person
+        </h1>
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="bg-blue-900 text-white p-5 flex flex-col rounded-xl items-center justify-center size-44">
             <FaWhatsapp size={50} />
