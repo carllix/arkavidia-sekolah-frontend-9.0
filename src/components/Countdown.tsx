@@ -6,7 +6,7 @@ interface CountdownProps {
   targetDate: Date;
 }
 
-const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
+export default function Countdown ({ targetDate }: CountdownProps) {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -86,5 +86,3 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
     </div>
   );
 };
-
-export default Countdown;
