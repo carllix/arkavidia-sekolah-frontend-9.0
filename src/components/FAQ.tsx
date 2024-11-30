@@ -19,7 +19,7 @@ interface FAQProps {
 export default function FAQ({ faqData }: FAQProps) {
   return (
     <div className="flex flex-col items-center w-full">
-      <Accordion type="single" collapsible className="w-full max-w-2xl">
+      <Accordion type="multiple" className="w-full max-w-2xl">
         {faqData.map((faq, index) => (
           <AccordionItem key={index} value={`item-${index}`} className="mb-4">
             <AccordionTrigger className="text-start text-sm">
